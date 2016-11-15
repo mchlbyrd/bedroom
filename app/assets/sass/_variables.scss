@@ -1,0 +1,55 @@
+$sans: 'Open Sans', sans-serif;
+$slab: 'Roboto Slab', serif;
+$sans2: 'Roboto', sans-serif;
+$condensed: 'Roboto Condensed', sans-serif;
+$condensed2: 'Open Sans Condensed', sans-serif;
+
+$brand1: #2F80ED;
+$brand2: #219653;
+$brand3: #F2994A;
+$brand4: #EB5757;
+
+$rem-base: 16px !default;
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+$breakpoints: (
+  small: 767px,
+  medium: 992px,
+  large: 1200px,
+  xl: 1600px,
+  xxl: 2000px
+);
+
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@function convert-to-rem($value, $base-value: $rem-base)  {
+  $value: strip-unit($value) / strip-unit($base-value) * 1em;
+  @if ($value == 0em) { $value: 0; } // Turn 0em into 0
+  @return $value;
+}
+
+@function rem-calc($values, $base-value: $rem-base) {
+  $max: length($values);
+
+  @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
+
+  $remValues: ();
+  @for $i from 1 through $max {
+    $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+  }
+  @return $remValues;
+}

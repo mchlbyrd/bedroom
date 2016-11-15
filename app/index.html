@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto+Slab:100,300,400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel='stylesheet' href='/assets/css/main.css' type='text/css'>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="controls">
+        <a href="javascript:void(0);" class="control control--fullscreen" id="controlFullscreen"></a>
+    </div>
+    <div class="camControls">
+        <form id="camControl">
+        <label for="camControlX">Cam X</label>
+        <input type="text" name="camControlX" id="camControlX" value="0">
+        <label for="camControlY">Cam Y</label>
+        <input type="text" name="camControlY" id="camControlY" value="0">
+        <label for="camControlZ">Cam Z</label>
+        <input type="text" name="camControlZ" id="camControlZ" value="0">
+        <label for="camControlZoom">Cam Zoom</label>
+        <input type="text" name="camControlZoom" id="camControlZoom" value="1">
+        <label for="lightControlIntensity">Light Intensity</label>
+        <input type="text" name="lightControlIntensity" id="lightControlIntensity" value="1">
+        <a href="javascript:void(0);" class="camControl camControl--fullscreen button--submit button" id="camControlSubmit">Submit</a>
+            </form>
+    </div>
+    <div class="panels">
+        <div class="panel panel--left">
+            <div class="panel__content">
+                <h1>Heading</h1>
+                <div class="panel__entries">
+                    <div class="entry entry--brand-4" data-scale="1" data-color="EB5757" data-rotation="0" data-model="bedroom" data-brand="4">
+                        <div class="entry__header">
+                            <div class="entry__key"> </div>
+                            <div class="entry__info">
+                                <h2 class="entry__title">Title</h2>
+                                <h3 class="entry__subtitle">Subtitle <span class="entry__additional">Additional</span></h3> </div>
+                        </div>
+                        <div class="entry__body entry__body--closed">
+                            <div class="entry__body-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas sapien vitae lacus porttitor tempus. Cras non volutpat massa. Nunc augue nisl, sodales sit amet arcu nec, porttitor dignissim neque. Nunc ultrices turpis eu aliquet vehicula. Nulla cursus lacinia iaculis. Fusce tincidunt fringilla eros euismod mollis. Sed vitae sodales nulla. Integer euismod, sapien eu pulvinar bibendum, magna mauris fermentum magna, luctus congue nisl magna nec elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1>Heading</h1>
+                <div class="panel__entries">
+                    <div class="entry entry--selected entry--brand-1" data-color="2F80ED" data-scale="1" data-model="bedroom" data-rotation="0" data-brand="1">
+                        <div class="entry__header">
+                            <div class="entry__key"> </div>
+                            <div class="entry__info">
+                                <h2 class="entry__title">Title</h2>
+                                <h3 class="entry__subtitle">Subtitle <span class="entry__additional">Additional</span></h3> </div>
+                        </div>
+                        <div class="entry__body entry__body--closed">
+                            <div class="entry__body-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas sapien vitae lacus porttitor tempus. Cras non volutpat massa. Nunc augue nisl, sodales sit amet arcu nec, porttitor dignissim neque. Nunc ultrices turpis eu aliquet vehicula. Nulla cursus lacinia iaculis. Fusce tincidunt fringilla eros euismod mollis. Sed vitae sodales nulla. Integer euismod, sapien eu pulvinar bibendum, magna mauris fermentum magna, luctus congue nisl magna nec elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry entry--brand-2" data-scale="0" data-color="219653" data-rotation="270" data-model="bedroom" data-brand="2">
+                        <div class="entry__header">
+                            <div class="entry__key"> </div>
+                            <div class="entry__info">
+                                <h2 class="entry__title">Title</h2>
+                                <h3 class="entry__subtitle">Subtitle <span class="entry__additional">Additional</span></h3> </div>
+                        </div>
+                        <div class="entry__body entry__body--closed">
+                            <div class="entry__body-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas sapien vitae lacus porttitor tempus. Cras non volutpat massa. Nunc augue nisl, sodales sit amet arcu nec, porttitor dignissim neque. Nunc ultrices turpis eu aliquet vehicula. Nulla cursus lacinia iaculis. Fusce tincidunt fringilla eros euismod mollis. Sed vitae sodales nulla. Integer euismod, sapien eu pulvinar bibendum, magna mauris fermentum magna, luctus congue nisl magna nec elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry entry--brand-3" data-scale="1" data-rotation="90" data-skills="sass,javascript,html" data-brand="3" data-skills="php,mysql,jquery,javascript,photoshop,css">
+                        <div class="entry__header">
+                            <div class="entry__key"> </div>
+                            <div class="entry__info">
+                                <h2 class="entry__title">Title</h2>
+                                <h3 class="entry__subtitle">Subtitle <span class="entry__additional">Additional</span></h3> </div>
+                        </div>
+                        <div class="entry__body entry__body--closed">
+                            <div class="entry__body-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas sapien vitae lacus porttitor tempus. Cras non volutpat massa. Nunc augue nisl, sodales sit amet arcu nec, porttitor dignissim neque. Nunc ultrices turpis eu aliquet vehicula. Nulla cursus lacinia iaculis. Fusce tincidunt fringilla eros euismod mollis. Sed vitae sodales nulla. Integer euismod, sapien eu pulvinar bibendum, magna mauris fermentum magna, luctus congue nisl magna nec elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1>Heading</h1>
+                <div class="panel__entries">
+                    <div class="entry">
+                       <div class="entry__header">
+                            <div class="entry__key"> </div>
+                            <div class="entry__info">
+                                <h2 class="entry__title">Title</h2>
+                                <h3 class="entry__subtitle">Subtitle <span class="entry__additional">Additional</span></h3> </div>
+                        </div>
+                        <div class="entry__body entry__body--closed">
+                            <div class="entry__body-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas sapien vitae lacus porttitor tempus. Cras non volutpat massa. Nunc augue nisl, sodales sit amet arcu nec, porttitor dignissim neque. Nunc ultrices turpis eu aliquet vehicula. Nulla cursus lacinia iaculis. Fusce tincidunt fringilla eros euismod mollis. Sed vitae sodales nulla. Integer euismod, sapien eu pulvinar bibendum, magna mauris fermentum magna, luctus congue nisl magna nec elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <div class="entry__header">
+                            <div class="entry__key"> </div>
+                            <div class="entry__info">
+                                <h2 class="entry__title">Title</h2>
+                                <h3 class="entry__subtitle">Subtitle <span class="entry__additional">Additional</span></h3> </div>
+                        </div>
+                        <div class="entry__body entry__body--closed">
+                            <div class="entry__body-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas sapien vitae lacus porttitor tempus. Cras non volutpat massa. Nunc augue nisl, sodales sit amet arcu nec, porttitor dignissim neque. Nunc ultrices turpis eu aliquet vehicula. Nulla cursus lacinia iaculis. Fusce tincidunt fringilla eros euismod mollis. Sed vitae sodales nulla. Integer euismod, sapien eu pulvinar bibendum, magna mauris fermentum magna, luctus congue nisl magna nec elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--
+        <div class="panel panel--timeline">
+            <div class="panel__timeline-lines">
+                <div class="timeline-line timeline-line--brand-1"> </div>
+            </div>
+            <div class="panel__timeline-labels">
+                <div class="timeline-label timeline-label--current"> Present </div>
+                <div class="timeline-label"> 2014 </div>
+                <div class="timeline-label"> 2012 </div>
+                <div class="timeline-label"> 2010 </div>
+                <div class="timeline-label"> 2008 </div>
+                <div class="timeline-label"> 2006 </div>
+                <div class="timeline-label"> 2004 </div>
+            </div>
+        </div>
+-->
+        <div class="panel panel--right" id="three-panel">
+            <div class="panel__grid-items">
+                <div class="grid-item grid-item--sass"></div>
+                <div class="grid-item grid-item--react"></div>
+                <div class="grid-item grid-item--html"></div>
+                <div class="grid-item grid-item--rails"></div>
+                <div class="grid-item grid-item--tdd"></div>
+                <div class="grid-item grid-item--git"></div>
+                <div class="grid-item grid-item--javascript"></div>
+                <div class="grid-item grid-item--css"></div>
+                <div class="grid-item grid-item--sketch"></div>
+                <div class="grid-item grid-item--photoshop"></div>
+                <div class="grid-item grid-item--wordpress"></div>
+                <div class="grid-item grid-item--php"></div>
+                <div class="grid-item grid-item--foundation"></div>
+                <div class="grid-item grid-item--meteor"></div>
+                <div class="grid-item grid-item--unity"></div>
+                <div class="grid-item grid-item--framer"></div>
+            </div>
+        </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/javascripts/three.min.js" type="text/javascript"></script>
+    <script src="/assets/javascripts/objloader.js" type="text/javascript"></script>
+    <script src="/assets/javascripts/stats.min.js" type="text/javascript"></script>
+    <script src="/assets/javascripts/tween.js" type="text/javascript"></script>
+    <script src="/assets/javascripts/main.js" type="text/javascript"></script>
+    <script src="/assets/javascripts/scene.js" type="text/javascript"></script>
+</body>
+
+</html>
